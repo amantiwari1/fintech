@@ -1,5 +1,5 @@
 import React from 'react';
-import {ThemeProviderInterface, IContextProps} from "./styled"
+import { ThemeProviderInterface, IContextProps } from "./styled"
 
 
 const getInitialTheme = () => {

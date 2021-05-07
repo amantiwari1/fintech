@@ -1,25 +1,18 @@
-import { Global, css } from '@emotion/react'
+import { createGlobalStyle } from "styled-components";
+import tw, { GlobalStyles as BaseStyles } from "twin.macro";
 
-
-import tw, { GlobalStyles as BaseStyles } from 'twin.macro'
-
-const customStyles = css`
-  * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        font-family: 'Source Sans Pro', sans-serif;
-  }
+const CustomStyles = createGlobalStyle`
   body {
-    ${tw`bg-lightmode dark:(bg-darkmode text-white) transition-all`}
+   ${tw`dark:(text-white) bg-gradient-to-r from-blue-400 md:via-pink-500 to-purple-400 dark:(from-gray-700 md:via-gray-600 to-gray-600)  `}
+
   }
-` 
+`;
 
 const GlobalStyles = () => (
   <>
     <BaseStyles />
-    <Global styles={customStyles} />
+    <CustomStyles />
   </>
-)
+);
 
-export default GlobalStyles
+export default GlobalStyles;
