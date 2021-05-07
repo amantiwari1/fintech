@@ -8,9 +8,7 @@
   "license": "MIT",
   "scripts": {
     "install": "cd client && yarn install",
-    "start": "concurrently \"yarn serve\" \"yarn client\" ",
-    "serve": "tsc-watch --onSuccess \"node dist/server/server.js\" ",
-    "client": "node start-client.js",
+    "dev": "node start-client.js",
     "build": "tsc"
   },
   "devDependencies": {
