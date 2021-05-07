@@ -1,13 +1,25 @@
-/** @jsxImportSource @emotion/react */
-// eslint-disable-next-line
-import tw from 'twin.macro'
-
+import { HomeSection, WealthSection, ProjectSection, PriceSection, FadeInSection } from '../components'
 
 const Home = () => {
     return (
-        <div tw="flex justify-center items-center" >
-            <h1 tw="text-5xl font-bold" >Typescript MERN Template</h1>
-        </div>
+        <>
+
+            <FadeInSection>
+                <HomeSection />
+            </FadeInSection>
+
+            <FadeInSection>
+
+                <WealthSection />
+            </FadeInSection>
+            <FadeInSection>
+                <ProjectSection />
+            </FadeInSection>
+
+            <FadeInSection>
+                <PriceSection />
+            </FadeInSection>
+        </>
     )
 }
 
