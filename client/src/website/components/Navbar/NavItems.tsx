@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import tw from "twin.macro";
 import { Link } from "react-router-dom";
 import { NavItemsInterface } from "./NavbarInterface";

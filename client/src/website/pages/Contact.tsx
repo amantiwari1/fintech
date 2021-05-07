@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import tw from 'twin.macro'
 import { ContactCard, FadeInSection } from '../components'
 import image from '../../Images/3.png'

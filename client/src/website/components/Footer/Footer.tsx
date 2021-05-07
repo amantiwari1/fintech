@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+// eslint-disable-next-line
 import tw from 'twin.macro'
 
 const Footer = () => {

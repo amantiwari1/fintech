@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import tw, { css } from 'twin.macro'
 import image from "../../../Images/1.png"
 
